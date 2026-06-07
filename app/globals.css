@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --surface: 244 247 251;
+  --panel: 255 255 255;
+  --border: 226 232 240;
+  --text: 15 23 42;
+  --muted: 100 116 139;
+  --accent: 14 116 144;
+  --accent-soft: 236 254 255;
+  --success: 22 163 74;
+  --warning: 217 119 6;
+  --danger: 220 38 38;
+}
+
+.dark {
+  color-scheme: dark;
+  --surface: 2 6 23;
+  --panel: 15 23 42;
+  --border: 30 41 59;
+  --text: 226 232 240;
+  --muted: 148 163 184;
+  --accent: 45 212 191;
+  --accent-soft: 15 118 110;
+  --success: 74 222 128;
+  --warning: 251 191 36;
+  --danger: 248 113 113;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 28%),
+    rgb(var(--surface));
+  background-size:
+    auto,
+    auto,
+    cover;
+  color: rgb(var(--text));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+}
